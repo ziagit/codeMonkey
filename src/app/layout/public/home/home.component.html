@@ -1,0 +1,88 @@
+
+<div class="test-container">
+    <h3>List of Modules</h3>
+
+    <mat-card *ngFor="let issue of issues">
+        <mat-card-header>
+            <mat-card-title>{{issue.title}} </mat-card-title>
+            <mat-card-subtitle>{{issue.writer}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{issue.description}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button matTooltip="Read more">
+                <mat-icon>more_horiz</mat-icon>
+            </button>
+            <a mat-button matTooltip="Go to Github for code" href="{{issue.github}}"><img src="assets/images/github.svg"
+                    alt=""></a>
+            <a mat-button matTooltip="Created issue in Stackoverflow" href="{{issue.stackoverflow}}"><img
+                    src="assets/images/stack.svg" alt=""></a>
+            <a mat-button matTooltip="Video toturial in Youtube" href="{{issue.youtube}}"><img
+                    src="assets/images/youtube.svg" alt=""></a>
+            <a mat-button matTooltip="Add your comments" href="{{issue.comments}}"><img src="assets/images/comment.svg"
+                    alt=""></a>
+
+        </mat-card-actions>
+    </mat-card>
+</div>
+<!-- <div class="container">
+    <mat-card *ngFor="let book of books">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
+        <mat-card-header>
+            <mat-card-title>{{book.name}} </mat-card-title>
+            <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{book.summary}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<h3>Top 2019 Books</h3>
+<div class="container">
+    <mat-card *ngFor="let book of books">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
+        <mat-card-header>
+            <mat-card-title>{{book.name}} </mat-card-title>
+            <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{book.summary}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<h3>Most Sold Out Books</h3>
+<div class="container">
+    <mat-card *ngFor="let book of books">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
+        <mat-card-header>
+            <mat-card-title>{{book.name}} </mat-card-title>
+            <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{book.summary}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card> -->
+<!-- </div> -->

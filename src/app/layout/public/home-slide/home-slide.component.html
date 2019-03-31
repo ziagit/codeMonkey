@@ -1,0 +1,30 @@
+<mat-grid-list cols="4" rowHeight="50px">
+  <mat-grid-tile [colspan]="3" [rowspan]="7">
+    <div class="home-logo">
+      <img src="assets/images/logo.png" alt="">
+    </div>
+    <div class="home-text">
+      <h2>We are here, help you to build your module Easer, Faster and Cleaner</h2>
+      <p>We build a module push to github, upload its related toturial on Youtube and linke to related issues on StackOverflow <br>Just use our built-in module</p>
+    </div>
+
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="8">
+    <div class="user-action">
+        <p>Login for more services</p>
+        <button mat-raised-button (click)="login()">Login</button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    Find code on
+    <a mat-button matTooltip="Go to Github for code" href=""><img src="assets/images/github.svg" alt=""></a>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    Find related issues on
+    <a mat-button matTooltip="Created issue in Stackoverflow" href=""><img src="assets/images/stack.svg" alt=""></a>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    Find video toturials on
+    <a mat-button matTooltip="Video toturial in Youtube" href=""><img src="assets/images/youtube.svg" alt=""></a>
+  </mat-grid-tile>
+</mat-grid-list>

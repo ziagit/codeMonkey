@@ -1,0 +1,25 @@
+mat-grid-tile{
+    background: #00a9e0;
+    color: #ffffff;
+    .home-logo{
+        img{
+            width: 204px;
+        }
+    }
+    .home-text{
+        h2{
+            color: #ffffff;
+        }
+        p{
+            color: #ffffffc7;
+            opacity: 9;
+        }
+        button{
+            color: red;
+        }
+    }
+    .user-action{
+        text-align: center;
+        align-items: center;
+    }
+}
